@@ -1,8 +1,7 @@
-// frontend/src/pages/Home.js
 import React from 'react';
 import { Box, Button, Container, Grid, Typography, Paper } from '@mui/material';
 import { styled } from '@mui/system';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import your logo image
 
 const HeroSection = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -36,9 +35,10 @@ const CallToActionSection = styled(Box)(({ theme }) => ({
 const Home = () => {
     return (
         <Box>
+         
             <HeroSection>
-                <Typography variant="h2" gutterBottom>Welcome to Pickleball.Ho!</Typography>
-                <Typography variant="h5" gutterBottom>Join the community, play, and improve your game.</Typography>
+                <Typography variant="h2" gutterBottom >Welcome to Pickleball.Ho!</Typography>
+                <Typography variant="h5" gutterBottom >Join the community, play, and improve your game.</Typography>
                 <Button
                     variant="contained"
                     color="secondary"
@@ -53,24 +53,24 @@ const Home = () => {
 
             <FeaturesSection>
                 <Container maxWidth="md">
-                    <Typography variant="h4" align="center" gutterBottom>Features</Typography>
+                    <Typography variant="h4" align="center" gutterBottom >Features</Typography>
                     <Grid container spacing={4} justifyContent="center">
                         <Grid item xs={12} sm={6} md={4}>
                             <FeatureCard>
-                                <Typography variant="h6" gutterBottom>Round Robin Events</Typography>
-                                <Typography>Join and participate in round robin events easily.</Typography>
+                                <Typography variant="h6" gutterBottom >Round Robin Events</Typography>
+                                <Typography >Join and participate in round robin events easily.</Typography>
                             </FeatureCard>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
                             <FeatureCard>
-                                <Typography variant="h6" gutterBottom>Exclusive Tips & Tricks</Typography>
-                                <Typography>Get exclusive pickleball tips and tricks to improve your game.</Typography>
+                                <Typography variant="h6" gutterBottom >Exclusive Tips & Tricks</Typography>
+                                <Typography >Get exclusive pickleball tips and tricks to improve your game.</Typography>
                             </FeatureCard>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
                             <FeatureCard>
-                                <Typography variant="h6" gutterBottom>Member Benefits</Typography>
-                                <Typography>Enjoy special benefits as a member, including newsletters and more.</Typography>
+                                <Typography variant="h6" gutterBottom >Member Benefits</Typography>
+                                <Typography >Enjoy special benefits as a member, including newsletters and more.</Typography>
                             </FeatureCard>
                         </Grid>
                     </Grid>
@@ -78,7 +78,7 @@ const Home = () => {
             </FeaturesSection>
 
             <CallToActionSection>
-                <Typography variant="h5" gutterBottom>Ready to Play?</Typography>
+                <Typography variant="h5" gutterBottom >Ready to Play?</Typography>
                 <Button
                     variant="contained"
                     color="primary"
